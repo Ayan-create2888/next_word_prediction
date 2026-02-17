@@ -4,7 +4,7 @@ import requests
 st.title("Next Word Prediction System")
 
 # Input text
-user_input = st.text_input("Enter a sequence of words:", "to be or")
+user_input = st.text_input("Enter a sequence of words:", "state bank of")
 
 if st.button("Predict Next Word"):
     if user_input.strip():
@@ -18,3 +18,4 @@ if st.button("Predict Next Word"):
             st.error("Error: Could not get prediction from server.")
     else:
         st.warning("Please enter some text.")
+
